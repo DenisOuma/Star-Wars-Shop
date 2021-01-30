@@ -1,0 +1,26 @@
+/* Styling the nav Bar for the Home Page */
+
+.bg-black {
+  background-color: black;
+}
+
+.form-control {
+  float: right;
+}
+.carousel-caption {
+  top: 200px;
+}
+
+.star-war {
+  color: #fdaf5a;
+}
+
+.underline {
+  width: 230px;
+  height: 2px;
+  background-color: rgb(255, 9, 9);
+}
+
+.bg-light-gray {
+  background-color: rgb(111, 111, 111, 0.09);
+}
