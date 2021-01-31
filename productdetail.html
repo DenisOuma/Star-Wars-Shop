@@ -3,53 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/product.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    
-<div class="container">
-    <div class="row">
-        <div class="col-md-5">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/star-wars-jedi-starfighter.jpg" alt="First slide">
+    <div class="container-fluid bg-dark header-top d-none d-md-block">
+        <div class="container">
+            <div class="row text-light pt-2 pb-2">
+                <div class="col-md-md-5">
+                    <i class="far fa-envelope" aria-hidden="true"></i>
+                    <!-- the name of the user name loged in --> kylee@gmail.com
                 </div>
+                <div class="col-md-3">
+    
+    
+                </div>
+                <div class="col-md-2"><i class="far fa-user" aria-hidden="true"></i>Account</div>
+                <div class="col-md-2"><i class="fa fa-cart-plus" aria-hidden="true"></i>My Cart-$0.00</div>
             </div>
-
-
-        </div>
-        <div class="col-md-7">
-        <p class="newarrival lext-center">NEW</p>
-        <h2>STARWAR SHIP</h2>
-        <p>Ship Namw: </p>
-        <p>Height:</p>
-        <p>mass:</p>
-        <p>Hair_color</p>
-        <p>Skin_color</p>
-        <p>eye_color</p>
-        <p>birth_year</p>
-        <p>gender</p>
-        <p>homeworld</p>
-        <p>films:</p>
-        <p>species</p>
-        <p>vehicles</p>
-        <p>starships</p>
-        <p>created</p>
-        <p>edited</p>
-        <p>url</p>
-        <p class="price">USD $359.00</p>
-        <label type="text">Quantity</label>
-        <input type="text" value="1">
-        <button type="button" class="btn btn-default cart">Add to Cart</button>
-
-
         </div>
     </div>
-</div>
+    
+    <div class="container-fluid bg-black">
+        <nav class="container navbar navbar-expand-lg navbar-dark bg-black">
+            <a href="home.html" class="navbar-brand">StarWar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Shop <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search for Ship" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+        </nav>
+    </div>
+    <div class="container m5-5 mb-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="images p-3">
+                            <div class="text-center p-4"> <img src="img/star-wars-jedi-starfighter.jpg" alt="" class="" id="main-image" width="400" height="400"></div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="product p-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center"><i class="fas fa-long-arrow-alt-left"></i> <span class="ml-1">Back</span></div>
+                                <i class="fas fa-shopping-cart text-muted"></i>
+                            </div>
+                            <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">STARWAR SHIP</span>
+                                <h5 class="text-uppercase"> shipName:X-Ship</h5>
+                                <div class="price d-flex flex-row align-items-center"> <span class="act-price">$20000</span>
+                        </div>
+                    </div>
+                    <p class="about">model:</p>
+                    <p class="about">manufacturer:</p>
+                    <p class="about">length:</p>
+                    <p class="about">max_atmosphering_speed:</p>
+                    <p class="about">crew</p>
+                    <p class="about">passengers</p>
+                    <p class="about">consumables</p>
+                    <p class="about">hyperdrive_rating</p>
+                    <p class="about">MGLT</p>
+                    <p class="about">starship_class</p>
+                    <p class="about">pilots</p>
+                    <p class="about">films</p>
+                    <p class="about">created</p>
+                    <p class="about">edited</p>
+                    <p class="about">Link</p>
+                </div>
+<div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4">Add to cart</button>
+    <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="d-flex justify-content-center row">
+                <div class="col-md-8">
+                    <div class="d-flex flex-column comment-section">
+                        <div class="bg-white p-2">
+                            <div class="d-flex flex-row user-info"><img class="rounded-circle"
+                                    src="img/logo.png" width="40">
+                                <div class="d-flex flex-column justify-content-start ml-2"><span
+                                        class="d-block font-weight-bold name">Marry Andrews</span><span
+                                        class="date text-black-50">Shared publicly - Jan 2020</span></div>
+                            </div>
+                            <div class="mt-2">
+                                <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                        <div class="bg-white">
+                            <div class="d-flex flex-row fs-12">
+                                <div class="like p-2 cursor"><i class="fas fa-thumbs-o-up"></i><span class="ml-1">Like</span>
+                                </div>
+                                <div class="like p-2 cursor"><i class="fas fa-commenting-o"></i><span class="ml-1">Comment</span>
+                                </div>
+                                <div class="like p-2 cursor"><i class="fas fa-share"></i><span class="ml-1">Share</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-light p-2">
+                            <div class="d-flex flex-row align-items-start"><img class="rounded-circle"
+                                    src="img/logo.png" width="40"><textarea
+                                    class="form-control ml-1 shadow-none textarea"></textarea></div>
+                            <div class="mt-2 text-right"><button class="btn btn-primary btn-sm shadow-none" type="button">Leave
+                                    comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none"
+                                    type="button">Cancel</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!-- js and jq -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -62,3 +142,44 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/star-wars-jedi-starfighter.jpg" alt="First slide">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-7">
+                <p class="newarrival lext-center">NEW</p>
+                <h2>STARWAR SHIP</h2>
+                <p>Ship Namw: </p>
+                <p>Height:</p>
+                <p>mass:</p>
+                <p>Hair_color</p>
+                <p>Skin_color</p>
+                <p>eye_color</p>
+                <p>birth_year</p>
+                <p>gender</p>
+                <p>homeworld</p>
+                <p>films:</p>
+                <p>species</p>
+                <p>vehicles</p>
+                <p>starships</p>
+                <p>created</p>
+                <p>edited</p>
+                <p>url</p>
+                <p class="price">USD $359.00</p>
+                <label type="text">Quantity</label>
+                <input type="text" value="1">
+                <button type="button" class="btn btn-default cart">Add to Cart</button>
+
+
+            </div>
+        </div>
+    </div> -->

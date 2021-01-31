@@ -5,7 +5,7 @@
 }
 
 .form-control {
-  float: right;
+  float: left !important;
 }
 .carousel-caption {
   top: 200px;
@@ -24,3 +24,23 @@
 .bg-light-gray {
   background-color: rgb(111, 111, 111, 0.09);
 }
+
+.form-inline {
+  float: left;
+}
+
+.btncollapse {
+  float: right !important;
+}
+/* #right {
+  position: absolute;
+  right: 20px;
+} */
+
+/* #another-right {
+  position: absolute;
+  right: 400px;
+}
+.nav-link {
+  right: 400px !important;
+} */
