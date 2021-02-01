@@ -21,20 +21,20 @@ async function fetchProductDetail(){
                                 <div class="price d-flex flex-row align-items-center"> <span class="act-price">$${ship.cost_in_credits}</span>
                         </div>
                     </div>
-                    <p class="about">model:  ${ship.model}</p>
-                    <p class="about">manufacturer: ${ship.manufacturer}</p>
-                    <p class="about">length: ${ship.length}</p>
-                    <p class="about">max_atmosphering_speed: ${ship.max_atmosphering_speed}</p>
-                    <p class="about">crew: ${ship.crew}</p>
-                    <p class="about">passengers: ${ship.passengers}</p>
-                    <p class="about">consumables: ${ship.consumables}</p>
-                    <p class="about">hyperdrive_rating: ${ship.hyperdrive_rating}</p>
+                    <p class="about">Model:  ${ship.model}</p>
+                    <p class="about">Manufacturer: ${ship.manufacturer}</p>
+                    <p class="about">Length: ${ship.length}</p>
+                    <p class="about">Max Atmosphering Speed: ${ship.max_atmosphering_speed}</p>
+                    <p class="about">Crew: ${ship.crew}</p>
+                    <p class="about">Passengers: ${ship.passengers}</p>
+                    <p class="about">Consumables: ${ship.consumables}</p>
+                    <p class="about">Hyperdrive Rating: ${ship.hyperdrive_rating}</p>
                     <p class="about">MGLT: ${ship.MGLT}</p>
-                    <p class="about">starship_class ${ship.length}</p>
-                    <p class="about">pilots: ${ship.pilots.length > 0 ? ship.pilots[0]:"none"}</p>
-                    <p class="about">films: ${ship.films[0]}</p>
-                    <p class="about">created: ${ship.created}</p>
-                    <p class="about">edited: ${ship.edited}</p>
+                    <p class="about">Starship Class ${ship.length}</p>
+                    <p class="about">Pilots: ${ship.pilots.length > 0 ? ship.pilots[0]:"none"}</p>
+                    <p class="about">Films: ${ship.films[0]}</p>
+                    <p class="about">Created: ${ship.created}</p>
+                    <p class="about">Edited: ${ship.edited}</p>
                     <p class="about">Link: ${ship.url}</p>
                 </div>
                 <div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4">Add to cart</button>
