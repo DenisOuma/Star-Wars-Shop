@@ -1,20 +1,20 @@
-var SearchBtn = document.getElementById('btn').addEventListener("click",getShip);
-var con = 0;
-var cardDiv = document.getElementById("cardDiv");
-let page = 2;
-let list = ""
+var SearchBtn = document
+  .getElementById('btn')
+  .addEventListener('click', getShip)
+var con = 0
+var cardDiv = document.getElementById('cardDiv')
+let page = 2
+let list = ''
 
+async function getShip(url) {
+  try {
+    list = ''
 
-async function getShip(url){
-    try {
-        list = ""
-        console.log(url)
-       const res = await fetch(url)
-       let jsonData = await res.json()
-       console.log(jsonData)
-       jsonData.results.forEach( (ship) => {
-           console.log(ship.name)
-           list += `
+    const res = await fetch(url)
+    let jsonData = await res.json()
+
+    jsonData.results.forEach((ship) => {
+      list += `
            
                 <div class="col-md-3">
                     <div class="card">
@@ -28,39 +28,33 @@ async function getShip(url){
                         </div>
                         </div>
                 `
-       })
-       cardDiv.innerHTML = list
-       document.getElementById("next").addEventListener("click",function(){
-           list = ""
-           jsonData.results = []
-           console.log(jsonData.results)
-           getShip(jsonData.next)
-       })
-       document.getElementById("prev").addEventListener("click",function(){
-           list = ""
-           jsonData.results = []
-           console.log(jsonData.results)
-           getShip(jsonData.previous)
-       })
-       if(!jsonData.previous){
-           document.getElementById("prev").disabled = true
-       }else{
-           document.getElementById("prev").disabled = false
-       }
-       if(!jsonData.next){
-           document.getElementById("next").disabled = true
-       }else{
-           document.getElementById("next").disabled = false
-       }
-    } catch (error) {
-        console.log(error)
+    })
+    cardDiv.innerHTML = list
+    document.getElementById('next').addEventListener('click', function () {
+      list = ''
+      jsonData.results = []
+
+      getShip(jsonData.next)
+    })
+    document.getElementById('prev').addEventListener('click', function () {
+      list = ''
+      jsonData.results = []
+
+      getShip(jsonData.previous)
+    })
+    if (!jsonData.previous) {
+      document.getElementById('prev').disabled = true
+    } else {
+      document.getElementById('prev').disabled = false
     }
-    
+    if (!jsonData.next) {
+      document.getElementById('next').disabled = true
+    } else {
+      document.getElementById('next').disabled = false
+    }
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 getShip(`https://swapi.dev/api/starships/`)
-
-
-
-
-
