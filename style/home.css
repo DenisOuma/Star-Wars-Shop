@@ -32,18 +32,17 @@
 .btncollapse {
   float: right !important;
 }
-/* #right {
+#right {
   position: absolute;
   right: 20px;
-} */
-
-/* #another-right {
+}
+*/ #another-right {
   position: absolute;
   right: 400px;
 }
 .nav-link {
   right: 400px !important;
-} */
+}
 .btn {
   padding-top: 20px;
   margin-right: 30px;
