@@ -13,7 +13,7 @@ async function fetchProductDetail(){
     document.getElementById("product-div").innerHTML = `
     <div class="product p-4">
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center"><i class="fas fa-long-arrow-alt-left"></i> <span class="ml-1">Back</span></div>
+                                <div class="d-flex align-items-center"><a href="home.html"><i class="fas fa-long-arrow-alt-left"></i> <span class="ml-1">Back</span></a></div>
                                 <i class="fas fa-shopping-cart text-muted"></i>
                             </div>
                             <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">STARWAR SHIP</span>
