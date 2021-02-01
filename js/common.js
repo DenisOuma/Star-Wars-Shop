@@ -36,3 +36,14 @@ document.getElementById('btn-search').addEventListener('click', function (e) {
   e.preventDefault()
   searchShip()
 })
+
+function loadCartItems() {
+  if (localStorage.getItem('cart') !== null) {
+    let cart = JSON.parse(localStorage.getItem('cart'))
+    let total = cart.cartitems.reduce((a, c) => {
+      return a + Number(c.cost)
+    }, 0)
+    document.getElementById('cart-total').innerText = total
+  }
+}
+loadCartItems()
