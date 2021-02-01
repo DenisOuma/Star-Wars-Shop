@@ -45,8 +45,8 @@
                         <a class="nav-link" href="cart.html">Cart</a>
                     </li>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search for Ship" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search for Ship" aria-label="Search" id="search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn-search">Search</button>
                     </form>
         </nav>
     </div>
@@ -60,35 +60,9 @@
                             
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="product p-4">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center"><i class="fas fa-long-arrow-alt-left"></i> <span class="ml-1">Back</span></div>
-                                <i class="fas fa-shopping-cart text-muted"></i>
-                            </div>
-                            <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">STARWAR SHIP</span>
-                                <h5 class="text-uppercase"> shipName:X-Ship</h5>
-                                <div class="price d-flex flex-row align-items-center"> <span class="act-price">$20000</span>
-                        </div>
-                    </div>
-                    <p class="about">model:</p>
-                    <p class="about">manufacturer:</p>
-                    <p class="about">length:</p>
-                    <p class="about">max_atmosphering_speed:</p>
-                    <p class="about">crew</p>
-                    <p class="about">passengers</p>
-                    <p class="about">consumables</p>
-                    <p class="about">hyperdrive_rating</p>
-                    <p class="about">MGLT</p>
-                    <p class="about">starship_class</p>
-                    <p class="about">pilots</p>
-                    <p class="about">films</p>
-                    <p class="about">created</p>
-                    <p class="about">edited</p>
-                    <p class="about">Link</p>
-                </div>
-<div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4">Add to cart</button>
-    <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div>
+                    <div class="col-md-6" id="product-div">
+                        
+
             </div>
         </div>
         <div class="container mt-5">
@@ -140,7 +114,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="/js/detail.js/"></script>
+        <script src="./js/detail.js"></script>
+        <script src="./js/common.js"></script>
 </body>
 </html>
 
