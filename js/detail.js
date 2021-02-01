@@ -30,7 +30,7 @@ async function fetchProductDetail(){
                     <p class="about">Consumables: ${ship.consumables}</p>
                     <p class="about">Hyperdrive Rating: ${ship.hyperdrive_rating}</p>
                     <p class="about">MGLT: ${ship.MGLT}</p>
-                    <p class="about">Starship Class ${ship.length}</p>
+                    <p class="about">Starship Class: ${ship.length}</p>
                     <p class="about">Pilots: ${ship.pilots.length > 0 ? ship.pilots[0]:"none"}</p>
                     <p class="about">Films: ${ship.films[0]}</p>
                     <p class="about">Created: ${ship.created}</p>
